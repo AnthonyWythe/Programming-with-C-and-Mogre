@@ -1,14 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Mogre;
+﻿using Mogre;
+using Mogre.TutorialFramework;
+using System;
+using System.Collections;
 
 namespace Tutorial
 {
     class PlayerStats : CharacterStats
     {
         Stat score;
+
+        public Stat Score
+        {
+            get { return score; }
+        }
 
         public PlayerStats()
         {

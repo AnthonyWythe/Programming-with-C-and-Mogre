@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Mogre;
+﻿using Mogre;
+using Mogre.TutorialFramework;
+using System;
+using System.Collections;
 
 namespace Tutorial
 {
@@ -11,7 +10,7 @@ namespace Tutorial
         public PlayerController(Character player)
         {
             character = player;
-            speed = 100;
+            speed = 300;
 
         }
 
@@ -60,6 +59,12 @@ namespace Tutorial
         private void ShootingControls()
         {
 
+        }
+
+        public override void Update(FrameEvent evt)
+        {
+            MovementControl(evt);
+            MouseControls();
         }
     }
 }

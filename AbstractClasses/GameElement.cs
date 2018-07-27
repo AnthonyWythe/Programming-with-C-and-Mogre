@@ -1,6 +1,8 @@
-﻿using System;
-using Mogre;
-//using PhysicsEng;
+﻿using Mogre;
+using Mogre.TutorialFramework;
+using System;
+using System.Collections;
+using PhysicsEng;
 
 namespace Tutorial
 {
@@ -45,14 +47,14 @@ namespace Tutorial
             set { isMovable = value; }
         }
 
-        //protected PhysObj physObj;            // This protected field is to contain physic object
+        protected PhysObj physObj;            // This protected field is to contain physic object
         /// <summary>
         /// Read only. This property return the physic object associated to this game element
         /// </summary>
-        //public PhysObj PhysObj
-        //{
-        //    get { return physObj; }
-        //}
+        public PhysObj PhysObj
+        {
+            get { return physObj; }
+        }
 
         /// <summary>
         /// This method is detaches from the scene graph and derstroies the game node and the game entity

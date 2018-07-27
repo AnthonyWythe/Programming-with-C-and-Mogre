@@ -55,13 +55,36 @@
     <Compile Include="AbstractClasses\CharacterClasses\CharacterStats.cs" />
     <Compile Include="AbstractClasses\GameElement.cs" />
     <Compile Include="AbstractClasses\MovableElement.cs" />
-    <Compile Include="AbstractClasses\PlayerClasses\Player.cs" />
-    <Compile Include="AbstractClasses\PlayerClasses\PlayerController.cs" />
-    <Compile Include="AbstractClasses\PlayerClasses\PlayerModel.cs" />
-    <Compile Include="AbstractClasses\PlayerClasses\PlayerStats.cs" />
+    <Compile Include="Bomb.cs" />
+    <Compile Include="Collectables\RedGem.cs" />
+    <Compile Include="PhysicsEngine\Contacts.cs" />
+    <Compile Include="PhysicsEngine\ElasticForce.cs" />
+    <Compile Include="PhysicsEngine\Force.cs" />
+    <Compile Include="PhysicsEngine\FrictionForce.cs" />
+    <Compile Include="PhysicsEngine\Physics.cs" />
+    <Compile Include="PhysicsEngine\PhysObj.cs" />
+    <Compile Include="PhysicsEngine\WeightForce.cs" />
+    <Compile Include="PlayerClasses\Player.cs" />
+    <Compile Include="PlayerClasses\PlayerController.cs" />
+    <Compile Include="PlayerClasses\PlayerModel.cs" />
+    <Compile Include="PlayerClasses\PlayerStats.cs" />
     <Compile Include="AbstractClasses\Stat.cs" />
     <Compile Include="AbstractClasses\ModelElement.cs" />
     <Compile Include="AbstractClasses\Score.cs" />
+    <Compile Include="Collectables\BlueGem.cs" />
+    <Compile Include="AbstractClasses\Collectable.cs" />
+    <Compile Include="Objects\Cube.cs" />
+    <Compile Include="Environment.cs" />
+    <Compile Include="GameInterface.cs" />
+    <Compile Include="AbstractClasses\Gem.cs" />
+    <Compile Include="Ground.cs" />
+    <Compile Include="HMD.cs" />
+    <Compile Include="InputsManager.cs" />
+    <Compile Include="AbstractClasses\PowerUp.cs" />
+    <Compile Include="Objects\Robot.cs" />
+    <Compile Include="PowerUps\HealthPU.cs" />
+    <Compile Include="PowerUps\LifePU.cs" />
+    <Compile Include="PowerUps\ShieldPU.cs" />
     <Compile Include="Tutorial.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -104,5 +127,6 @@
     </Reference>
     <Reference Include="System" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

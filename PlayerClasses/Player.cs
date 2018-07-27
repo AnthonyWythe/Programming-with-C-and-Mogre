@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Mogre;
+﻿using Mogre;
+using Mogre.TutorialFramework;
+using System;
+using System.Collections;
 
 namespace Tutorial
 {
@@ -19,13 +18,13 @@ namespace Tutorial
             
         }
 
-        private void Update(FrameEvent evt)
+        public override void Update(FrameEvent evt)
         {
             model.Animate(evt);
             controller.Update(evt);
         }
 
-        private void Shoot()
+        public override void Shoot()
         {
            
         }

@@ -1,5 +1,7 @@
-﻿using System;
-using Mogre;
+﻿using Mogre;
+using Mogre.TutorialFramework;
+using System;
+using System.Collections;
 
 namespace Tutorial
 {
@@ -32,7 +34,7 @@ namespace Tutorial
         /// <param name="direction">Direction along which move the movable element</param>
         virtual public void Move(Vector3 direction)
         {
-            this.Move(direction);
+            gameNode.Translate(direction);
         }
 
         /// <summary>
@@ -43,7 +45,7 @@ namespace Tutorial
         virtual public void Rotate(Quaternion quaternion, 
                    Node.TransformSpace transformSpace = Node.TransformSpace.TS_LOCAL)
         {
-            this.Rotate(quaternion, transformSpace);
+            gameNode.Rotate(quaternion, transformSpace);
         }
 
         /// <summary>

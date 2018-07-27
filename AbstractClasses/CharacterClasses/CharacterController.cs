@@ -1,5 +1,7 @@
-﻿using System;
-using Mogre;
+﻿using Mogre;
+using Mogre.TutorialFramework;
+using System;
+using System.Collections;
 
 namespace Tutorial
 {
@@ -27,6 +29,12 @@ namespace Tutorial
         public bool Shoot
         {
             set { shoot = value; }
+        }
+
+        protected bool swapGuns;
+        public bool SwapGuns
+        {
+            set { swapGuns = value; }
         }
 
         protected bool forward;             // This method determines when the charatcer is to move forward

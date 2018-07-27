@@ -1,14 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Mogre;
+﻿using Mogre;
+using Mogre.TutorialFramework;
+using System;
+using System.Collections;
 
 namespace Tutorial
 {
     class Score : Stat
     {
-        private void Increase(int val)
+        public override void Increase(int val)
         {
             val = val + 1;
         }
